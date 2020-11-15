@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, monospace;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  margin: auto 25px;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  padding: 2px;
+
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  outline: thin;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+#search-bar {
+  font-size: 1em;
+  flex: 1 1 400px;
+  margin: 0 10px;
+  border: none;
+  outline: none;
+}
+
+#search-form svg {
+  margin: auto 0;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  fill: gray;
+  margin-left: 10px;
+  align-self: center;
+}
+
+#search-mic-button {
+  width: auto;
+  height: auto;
+  padding: 20px 26px;
+  background: url("../images/google-mic.svg") center no-repeat;
+  background-size: 24px 24px;
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+}
+#centered-search {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  user-select: none;
+  font-size: 0.8em;
+  margin: 1.25em;
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+  color: #111;
+}
+footer {
+  margin: 0.8em;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  flex: 0 0 130px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+header li,
+footer li {
+  display: inline;
+}
+.more-btn {
+  display: inline-flex;
+  width: 32px;
+  height: 28px;
+  background-size: 528px 68px;
+  background-position: -132px -38px;
+  background-image: url("http://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+}
