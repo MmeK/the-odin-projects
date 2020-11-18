@@ -107,13 +107,13 @@ header a {
 }
 
 footer nav {
+  flex-direction: row-reverse;
   width: 100vw;
   height: auto;
   font-size: 14px;
   border: 1px solid lightgray;
   justify-self: flex-end;
   display: flex;
-  flex-direction: row-reverse;
   background-color: #f2f2f2;
   flex: 0 0 400px;
   justify-content: space-between;
