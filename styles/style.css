@@ -7,7 +7,7 @@
 body {
   display: flex;
   overflow: overlay;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
@@ -50,6 +50,8 @@ main {
   margin: auto 0;
   height: 20px;
   width: 20px;
+  min-width: 20px;
+  min-height: 20px;
   justify-content: center;
   fill: gray;
   margin-left: 10px;
@@ -61,8 +63,9 @@ main {
   height: auto;
   padding: 20px 26px;
   background: url("../images/google-mic.svg") center no-repeat;
-  background-size: 24px 24px;
+  background-size: 20px 20px;
   background-color: transparent;
+  cursor: pointer;
   outline: transparent;
   border: none;
 }
@@ -85,10 +88,24 @@ header nav {
   align-items: baseline;
   justify-content: flex-end;
 }
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 header a {
   text-decoration: none;
   color: #111;
 }
+
 footer nav {
   width: 100vw;
   height: auto;
@@ -99,9 +116,9 @@ footer nav {
   flex-direction: row;
   background-color: #f2f2f2;
   flex: 0 0 400px;
-
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 footer a {
   color: #70757a;
   text-decoration: none;
@@ -188,4 +205,14 @@ footer li {
 }
 .hover-underline a:hover {
   text-decoration: underline;
+}
+p {
+  padding: 1em;
+  color: #2c2023;
+}
+p,
+p * {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  font-size: smaller;
 }
