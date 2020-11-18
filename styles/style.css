@@ -14,7 +14,7 @@ body {
 }
 
 main {
-  margin: auto 25px;
+  margin: 0px 25px 250px 25px;
 }
 
 #search-form {
@@ -31,7 +31,7 @@ main {
   border: 1px solid lightgray;
   border-radius: 100px;
   outline: thin;
-  max-width: 500px;
+  max-width: 600px;
   min-width: 250px;
 }
 #search-form:hover {
